@@ -7,5 +7,14 @@ const posts = [
 
 // Crea un nuovo array coi nomi di tutti gli autori
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']
+console.log("---FOR EACH---");
 const authorNames = posts.map((element) => element.author);
 console.log(authorNames);
+
+// CON CICLO FOR
+console.log("---CICLO FOR---");
+let newAuthor = [];
+for (let i = 0; i < posts.length; i++) {
+  newAuthor.push(posts[i].author);
+}
+console.log(newAuthor);
